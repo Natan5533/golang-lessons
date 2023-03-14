@@ -6,7 +6,7 @@ func TestOla(t *testing.T) {
     verifyResponse := func(t *testing.T, response, expected string){
         t.Helper()
         if response != expected {
-            t.Errorf("resultado '%s', esperado '%s'", response, expected)
+            t.Errorf("resultado '%s', esperado '%s'!", response, expected)
             
         }
     }

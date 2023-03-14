@@ -6,6 +6,7 @@ const prefixInFrench = "Bonjour "
 const portuguese = "portuguese"
 const french = "french"
 
+// functions
 func Ola(name string, language string) string {
     if name == "" {
         name = "World"
