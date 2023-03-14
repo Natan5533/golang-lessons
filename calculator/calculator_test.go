@@ -6,7 +6,7 @@ func TestCalculator(t *testing.T) {
 	verifyResponse := func(t *testing.T, response, expected int) {
 		t.Helper()
 		if response != expected {
-			t.Errorf("[Fail] Expected: '%d' Returned '%d'", expected, response)
+			t.Errorf("[Fail] Expected: '%d' Returned '%d'!", expected, response)
 		}
 	}
 	t.Run("test mult", func(t *testing.T) {
