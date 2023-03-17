@@ -1,6 +1,7 @@
 package calculator
 
 import "testing"
+import "fmt"
 
 func TestCalculator(t *testing.T) {
 	verifyResponse := func(t *testing.T, response, expected int) {
@@ -33,4 +34,9 @@ func TestCalculator(t *testing.T) {
 
 		verifyResponse(t, response, expected_response)
 	})
+}
+func ExampleAdiciona() {
+    soma := Sum(1, 5)
+    fmt.Println(soma)
+    // Output: 6
 }
