@@ -1,7 +1,18 @@
 package interacao
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
+// Example
+func ExampleRepeat() {
+	response := Repeat("Monkey D. Luffy", 2)
+	fmt.Println(response)
+	// Output: Monkey D. LuffyMonkey D. Luffy
+}
+
+// Test
 func TestRepeat(t *testing.T) {
 	response := Repeat("a", 6)
 	expected_response := "aaaaaa"
@@ -11,6 +22,7 @@ func TestRepeat(t *testing.T) {
 	}
 }
 
+// Benchmark
 func BenchmarkRepeat(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Repeat("a", 2)
