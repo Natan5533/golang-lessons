@@ -2,7 +2,7 @@ package arrays
 
 import "testing"
 
-func TestListLength(t *testing.T) {
+func TestListCounter(t *testing.T) {
 	assert := func(t *testing.T, result, expected int, array []int) {
 		t.Helper()
 		if expected != result {
@@ -19,3 +19,5 @@ func TestListLength(t *testing.T) {
 
 	})
 }
+
+// Somatudo

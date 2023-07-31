@@ -9,7 +9,7 @@ func Search(list [5]int, target int) int {
 		number := head[0]
 		if number == target {
 			result++
-			Search()
+			//Search()
 		}
 
 	}
