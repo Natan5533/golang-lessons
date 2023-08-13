@@ -1,13 +1,13 @@
 package arrays
 
-func ListSearch(list []int, number int) (result []int) {
-	list_length := len(list)
+func ListSearch(list []int, number int) (resultSearch []int) {
 	counter := 0
 
-	result = make([]int, list_length)
+	var result []int
+
 	for _, list_number := range list {
 		if list_number == number {
-			result[counter] = number
+			result = append(result, number)
 			counter++
 		}
 	}
