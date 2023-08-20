@@ -15,7 +15,7 @@ func TestWallet(t *testing.T) {
 	verifyError := func(t *testing.T, errorMessage error, expectedMessage error) {
 		t.Helper()
 		if errorMessage == nil {
-			t.Error("Erro not found")
+			t.Error("Error not found")
 		}
 
 		if errorMessage != expectedMessage {
